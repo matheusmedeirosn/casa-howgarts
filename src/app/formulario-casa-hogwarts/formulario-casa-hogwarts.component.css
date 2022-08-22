@@ -1,0 +1,47 @@
+.cor{
+  background-color: rgb(109, 13, 13);
+  padding-bottom: 3.5px;
+
+}
+.col-sm-3{
+  width: auto;
+}
+.container{
+  padding-top: 40px;
+}
+.form-select{
+  width: 60%;
+  opacity: 90%;
+  margin-left: 20%;
+}
+.col-auto{
+  padding-top: 10px;
+}
+button{
+  width: 100px;
+  font-size: 12px;
+  margin-left: 20%;
+}
+.form-control{
+  width: 60%;
+  opacity: 90%;
+  margin-left: 20%;
+}
+label{
+  padding-top: 10px;
+  color: rgb(219, 219, 219);
+  margin-left: 20%;
+}
+#label1{
+  padding-top: 30px;
+}
+.resultado{
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+p{
+  text-align: center;
+  text-transform: uppercase;
+}
+

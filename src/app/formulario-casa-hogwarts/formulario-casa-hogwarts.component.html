@@ -1,0 +1,51 @@
+<div class="cor">
+
+    <div class="container" *ngIf="resposta; else formulario">
+      <p class="resultado"> {{nome}}, sua casa é:</p>
+      <p class="resultado">{{resposta}}</p>
+    </div>
+    <app-footer></app-footer>
+
+    <ng-template #formulario>
+      <form class="form" validate (ngSubmit)="resultado()">
+        <div class="col">
+          <label for="nome" id="label1" class="form-label">Primeiramente nos informe seu nome:</label>
+        </div>
+        <input type="text" class="form-control" id="validationCustom01" placeholder="Primeiro nome" name="nome" [(ngModel)]="nome" required>
+        <div class="col-sm-3">
+            <label for="validationCustom01" class="form-label">Ser ético é mais importante do que progredir no mundo:</label>
+            <select class="form-select" id="inputGroupSelect02" name="etico" [(ngModel)]="etico">
+              <option value="s">Concordo</option>
+              <option value="n">Discordo</option>
+            </select>
+          </div>
+          <div class="col-sm-3">
+            <label for="validationCustom01" class="form-label">Outros me veem como uma pessoa de bom coração e bem-intencionada.</label>
+            <select class="form-select" id="inputGroupSelect03" name="bomcoracao" [(ngModel)]="bomcoracao">
+            <option value="s">Concordo</option>
+            <option value="n">Discordo</option>
+            </select>
+          </div>
+          <div class="col-sm-3">
+            <label for="validationCustom01" class="form-label">Eu sinto que sou mais especial do que os outros.</label>
+            <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon" name="especial" [(ngModel)]="especial">
+            <option value="s">Concordo</option>
+            <option value="n">Discordo</option>
+            </select>
+          </div>
+
+          <div class="col-sm-3">
+            <label for="validationCustom01" class="form-label">Se não tiver certeza de algo, vou pesquisar e aprender tudo o que puder sobre isso.</label>
+            <select class="form-select" id="inputGroupSelect05" aria-label="Example select with button addon" name="pesquisar" [(ngModel)]="pesquisar" >
+              <option value="s">Concordo</option>
+              <option value="n">Discordo</option>
+             </select>
+          </div>
+          <div class="col-auto ">
+            <br>
+            <button type="submit" class="btn btn-primary" >ENVIAR</button>
+          </div>
+          <br>
+          </form>
+    </ng-template>
+</div>
