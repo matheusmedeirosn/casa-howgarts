@@ -1,3 +1,7 @@
+
+# Casa-Hogwarts
+Esse projeto foi feito com o intuito de que, através de uma aplicação web, fosse realizado um quiz, que através dele, ditasse qual casa de hogwarts você pertence. Foi utilizado como tecnologia, as linguaguens de marcação: HTML5 e CSS3. Já no back-end, foi usado Typescript. Além disso, com o intuito de facilitar mais ainda o desenvolvimento do projeto, realizei todo códfigo por meio do framework: Angular.
+
 # Hogwarts
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.1.
